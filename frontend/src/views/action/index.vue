@@ -63,6 +63,8 @@
       </tbody>
     </table>
 
+    <ReleaseWindowPanel module-key="action" />
+
     <footer class="page-foot">
       <span>共 {{ total }} 条行动标签记录</span>
       <span v-if="errorMessage" class="error-text">{{ errorMessage }}</span>
@@ -79,6 +81,7 @@ import {
   moduleMeta,
   runAction as applyAction,
 } from '@/api/local-service'
+import ReleaseWindowPanel from '@/components/ReleaseWindowPanel.vue'
 import type { EntryRow } from '@/data/types'
 
 const meta = moduleMeta('action')

@@ -19,6 +19,7 @@ const Clickstream = () => import('@/views/clickstream/index.vue')
 const Retention = () => import('@/views/retention/index.vue')
 const Dataview = () => import('@/views/dataview/index.vue')
 const Paramdef = () => import('@/views/paramdef/index.vue')
+const Release = () => import('@/views/release/index.vue')
 
 const router = createRouter({
   history: createWebHistory(),
@@ -42,6 +43,7 @@ const router = createRouter({
     { path: '/retention', name: 'retention', component: Retention },
     { path: '/dataview', name: 'dataview', component: Dataview },
     { path: '/paramdef', name: 'paramdef', component: Paramdef },
+    { path: '/release', name: 'release', component: Release },
   ],
 })
 
